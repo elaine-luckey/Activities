@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+header {
+  padding: 40px;
+  text-align: center;
+  background: #13293d;
+  color: #fff;
+}
+
+/* 
+What happens when we set the display property to flex? 
+Answer: 'display: flex;' is used to create a flex container. It allows you to align and distribute items within the container along a single 
+direction (either horizontally or vertically) and control their behavior.
+*/
+nav {
+  display: flex;
+  background-color: #d8a47f;
+}
+
+nav a {
+  color: #13293d;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* 
+What is the flex-wrap property? 
+Answer: 'flex-wrap' property allows the items to wrap when a list of items fall off of the main screen and the user has to scroll.
+*/
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+aside {
+  flex: 1;
+  background-color: #b9c6ae;
+  padding: 80px;
+  text-align: center;
+}
+
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #13293d;
+  color: #fff;
+}
+
+/* 
+What does the justify-content property do? 
+Answer: 'justify-content' property you can control how flex items are distributed along the main axis (horizontal axis by default).
+*/
+.products {
+  flex: 4;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* 
+What is the flex property a shorthand property for?
+What is it doing here? 
+Answer: The flex property is a shorthand property that combines flex-grow, flex-shrink, and flex-basis
+Answer: the flex property does not let the item grow, so it grows at 0. the flex property does not let the item shrink, so the shrink is set to 0 and the basis is the initial size of 400px
+*/
+.card {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 10px;
+  flex: 0 0 400px;
+}
+
+.card header {
+  padding: 20px;
+}
+
+.card p {
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+}
+
+/* 
+What does the flex-direction property define?
+What is it doing here? 
+Answer: flex-direction is used to define the direction of the main axis in a flex container. It determines how flex items are laid out and stacked within the flex container.
+Answer: the 'flex-direction: column' is displaying the items in a column from top to bottom.
+*/
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
+}

@@ -1,14 +1,21 @@
+//Declare the variable student to be the id element student-name
 var student = document.getElementById("student-names");
+//Declare the variable grade to be the id element grades
 var grade = document.getElementById("grades");
+//Declare the variable comment to be the id element msg
 var comment = document.getElementById("msg");
+//Declare the variable saveButton to be the id element save
 var saveButton = document.getElementById("save");
+//Declare the variable savedName to be the id element saved-name
 var savedName = document.getElementById("saved-name");
 
+//Creating a function called saveLastGrade
 function saveLastGrade() {
-  // Save related form data as an object
+// Save related form data as an object
   var studentGrade = {
     student: student.value,
     grade: grade.value,
+//tim() is used to trim out all the extra whitespace
     comment: comment.value.trim()
   };
   // Use .setItem() to store object in storage and JSON.stringify to convert it as a string

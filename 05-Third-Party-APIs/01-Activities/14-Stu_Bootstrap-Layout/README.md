@@ -2,13 +2,13 @@
 
 Work with a partner to implement the following user story:
 
-* As a developer, I want to be able to create a responsive layout without having to write custom CSS.
+- As a developer, I want to be able to create a responsive layout without having to write custom CSS.
 
 ## Acceptance Criteria
 
-* It's done when the page displays a multicolumn layout on large screens and matches the mock-up provided.
+- It's done when the page displays a multicolumn layout on large screens and matches the mock-up provided.
 
-* It's done when the screen displays in a single-column layout on smaller screens and matches how it looks currently.
+- It's done when the screen displays in a single-column layout on smaller screens and matches how it looks currently.
 
 ## 📝 Notes
 
@@ -26,13 +26,14 @@ The following image demonstrates the web application's appearance and functional
 
 ## 💡 Hint
 
-* Don't forget to use the previous activity as a guide to how the classes can be used!
+- Don't forget to use the previous activity as a guide to how the classes can be used!
 
 ## 🏆 Bonus
 
 If you have completed the activity and want to further your knowledge, work through the following challenge with your partner:
 
-* What are some ways Chrome DevTools can demystify the CSS powering the grid? Use [Google](https://www.google.com) or another search engine to research this question.
+- What are some ways Chrome DevTools can demystify the CSS powering the grid? Use [Google](https://www.google.com) or another search engine to research this question.
 
 ---
+
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.

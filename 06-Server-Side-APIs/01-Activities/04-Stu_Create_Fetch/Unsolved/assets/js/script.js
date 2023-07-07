@@ -1,11 +1,12 @@
 var repoList = document.querySelector('ul');
 var fetchButton = document.getElementById('fetch-button');
 
+
 //getApi function is called when the fetchButton is clicked
 
 function getApi() {
   // Insert the API url to get a list of your repos
-  var requestUrl = '';
+  var requestUrl = 'https://api.github.com/users/elaine-luckey/repos';
 
   fetch(requestUrl)
     .then(function (response) {

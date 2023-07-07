@@ -2,7 +2,7 @@
 
 Work with a partner to resolve the following issue(s):
 
-* As a developer, I want all of my scripts to be properly loaded by the browser.
+- As a developer, I want all of my scripts to be properly loaded by the browser.
 
 ## Expected Behavior
 
@@ -32,9 +32,10 @@ How are JavaScript files usually loaded by an HTML page?
 
 If you have completed this activity, work through the following challenge with your partner to further your knowledge:
 
-* What other features are available in the Chrome DevTools Network tab?
+- What other features are available in the Chrome DevTools Network tab?
 
 Use [Google](https://www.google.com) or another search engine to research this.
 
 ---
+
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.

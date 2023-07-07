@@ -2,6 +2,14 @@ fetch(
   // Explain each parameter in comments below.
   'https://api.github.com/repos/nodejs/node/issues?per_page=10&state=open&sort=created&direction=desc'
 )
+
+/*
+per_page => number of issues per listed page
+state => the issues status to be worked on - default
+sort => order the list of returned issues - default
+direction => descending order of sorted issues returned - default
+*/
+
   .then(function (response) {
     return response.json();
   })

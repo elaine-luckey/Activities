@@ -4,7 +4,8 @@ var limitWarningEl = document.querySelector('#limit-warning');
 
 var getRepoName = function () {
   // Where is this value coming from?
-  // TODO: Write your answer here
+  // pulling the URL for the issue and the link of the repo that was just clicked
+  // This is comming from the URL search bar in the browser. It is what comes after the '?'
   var queryString = document.location.search;
   var repoName = queryString.split('=')[1];
 
@@ -14,7 +15,8 @@ var getRepoName = function () {
     getRepoIssues(repoName);
   } else {
     // Under what condition will this run?
-    // TODO: Write your answer here
+    // Only if there is no repo name found
+    // This will run and return to the homepage if there was nothing in the URL query
     document.location.replace('./index.html');
   }
 };
@@ -28,7 +30,7 @@ var getRepoIssues = function (repo) {
         displayIssues(data);
 
         // What is this checking for? Under what condition will this be `true`?
-        // TODO: Write your answer here
+        // Since GitHub only returns 30 results at a time, we check to see if there's more than 30 by looking for a next page URL in teh response headers.
         if (response.headers.get('Link')) {
           displayWarning(repo);
         }
@@ -41,7 +43,7 @@ var getRepoIssues = function (repo) {
 
 var displayIssues = function (issues) {
   // Is there a difference between this and `!issues.length`?
-  // TODO: Write your answer here
+  // Yes, issues.length === 0 is strictly checking if there are 0 issues, but the !issues.length is checking for a falsy value (such as 0, null, or undefined)
   if (issues.length === 0) {
     issueContainerEl.textContent = 'This repo has no open issues!';
     return;
@@ -72,7 +74,7 @@ var displayIssues = function (issues) {
 };
 
 // What does this function do?
-// TODO: Write your answer here
+// When there are more issues than what GitHub has returned, we let the user know by printing a message with a link to the page
 var displayWarning = function (repo) {
   limitWarningEl.textContent = 'To see more than 30 issues, visit ';
 
@@ -82,7 +84,7 @@ var displayWarning = function (repo) {
   linkEl.setAttribute('target', '_blank');
 
   // Where does this appear on the page?
-  // TODO: Write your answer here
+  // This will appear on the bottom of the page
   limitWarningEl.appendChild(linkEl);
 };
 

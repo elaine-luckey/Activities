@@ -21,11 +21,11 @@ var formSubmitHandler = function (event) {
 
 var buttonClickHandler = function (event) {
   // What is `event.target` referencing?
-  // TODO: Write your answer here
+  // 'event.target' is reference to the DOM element of what programming language button was clicked on the page
   var language = event.target.getAttribute('data-language');
 
   // Why is this `if` block in place?
-  // TODO: Write your answer here
+  // If there is no language read from the button, don't attempt to reach the repo
   if (language) {
     getFeaturedRepos(language);
 
@@ -55,7 +55,8 @@ var getUserRepos = function (user) {
 
 var getFeaturedRepos = function (language) {
   // What are the query parameters doing here?
-  // TODO: Write your answer here
+  // The 'q' parameter is what language we want to query, the '+is:featured' filter to return only featured repositories
+  //The 'sort' parameter will instruct GitHub to respond with all of the repo order by the number of issues needing help
   var apiUrl = 'https://api.github.com/search/repositories?q=' + language + '+is:featured&sort=help-wanted-issues';
 
   fetch(apiUrl).then(function (response) {
@@ -73,7 +74,8 @@ var displayRepos = function (repos, searchTerm) {
   if (repos.length === 0) {
     repoContainerEl.textContent = 'No repositories found.';
     // What would happen if there was no `return;` here?
-    // TODO: Write your answer here
+    // Return kicks it out of the function and will not execute any of the code in the remaining of the function. If the return was not there, it would continue all the code below.
+    // Without a 'return' statement, the rest of this function will continue to run and perhaps throw an error if 'repos' is empty
     return;
   }
 
@@ -81,7 +83,8 @@ var displayRepos = function (repos, searchTerm) {
 
   for (var i = 0; i < repos.length; i++) {
     // What is the result of this string concatenation?
-    // TODO: Write your answer here
+    // Creating the string of the repos results when a search is initiated
+    //The result will be '<github-username>/<github-repository-name>'
     var repoName = repos[i].owner.login + '/' + repos[i].name;
 
     var repoEl = document.createElement('div');

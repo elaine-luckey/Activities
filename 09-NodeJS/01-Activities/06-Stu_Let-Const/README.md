@@ -2,7 +2,7 @@
 
 Work with a partner to resolve the following issue(s):
 
-* As a developer, I want my variables to be correctly scoped so that my functions work correctly.
+- As a developer, I want my variables to be correctly scoped so that my functions work correctly.
 
 ## Expected Behavior
 
@@ -12,6 +12,7 @@ When a user runs the `addGreetingMessage` function, it should log the messages i
 Hello Tammy
 How are you?
 ```
+
 When a user runs the `calloutCounter` function, it should log the messages in the correct order inside the console.
 
 ```sh
@@ -72,8 +73,8 @@ What does it mean when a variable is block scope?
 
 If you have completed this activity, work through the following challenge with your partner to further your knowledge:
 
-* What is the difference between function scope and block scope?
-  
+- What is the difference between function scope and block scope?
+
 Use [Google](https://www.google.com) or another search engine to research this.
 
 ---

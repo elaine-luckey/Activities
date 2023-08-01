@@ -4,7 +4,7 @@ Work with a partner to add comments describing the functionality of the code fou
 
 ## 📝 Notes
 
-Refer to the documentation: 
+Refer to the documentation:
 
 [Node.js documentation on the fs module](https://nodejs.org/api/fs.html#fs_fs_appendfile_path_data_options_callback)
 
@@ -12,9 +12,10 @@ Refer to the documentation:
 
 If you have completed this activity, work through the following challenge with your partner to further your knowledge:
 
-* What is a ternary operator?
+- What is a ternary operator?
 
 Use [Google](https://www.google.com) or another search engine to research this.
 
 ---
+
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.

@@ -44,17 +44,32 @@ app.post('/api/reviews', (req, res) => {
       review_id: uuid(),
     };
 
+    fs.readFile('./db/reviews.json', 'utf8', (error, data) => {
+      if(error){
+        console.log(error)
+        res.send(`Hey! Sorry but I am not able to read the previous review.`)
+      }
+
+    
+      const previousData = JSON.parse(data)
+
+      previousData.push(newReview);
+
+          // Write the string to a file
+    fs.writeFile(`./db/reviews.json`, JSON.stringify(previousData), (err) =>
+    err
+      ? console.error(err)
+      : console.log(
+          `Review for ${newReview.product} has been written to JSON file`
+        )
+  );
+
+    })
+
     // Convert the data to a string so we can save it
     const reviewString = JSON.stringify(newReview);
 
-    // Write the string to a file
-    fs.writeFile(`./db/reviews.json`, reviewString, (err) =>
-      err
-        ? console.error(err)
-        : console.log(
-            `Review for ${newReview.product} has been written to JSON file`
-          )
-    );
+
 
     const response = {
       status: 'success',

@@ -6,9 +6,9 @@ Work with a partner to add comments describing the functionality of the code fou
 
 How are route parameters denoted when building route paths?
 
-How can we chain multiple parameters together in the same path? 
+How can we chain multiple parameters together in the same path?
 
-Refer to the documentation: 
+Refer to the documentation:
 
 [Express.js documentation on query parameters](http://expressjs.com/en/guide/routing.html#route-paths)
 
@@ -18,9 +18,10 @@ Refer to the documentation:
 
 If you have completed this activity, work through the following challenge with your partner to further your knowledge:
 
-* When would you use query string parameters vs. route parameters?
+- When would you use query string parameters vs. route parameters?
 
 Use [Google](https://www.google.com) or another search engine to research this.
 
 ---
+
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.

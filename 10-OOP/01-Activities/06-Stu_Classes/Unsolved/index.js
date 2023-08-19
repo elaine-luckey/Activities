@@ -1,6 +1,19 @@
 // TODO: Create a class constructor named BlogPost that takes in 'authorName', 'title', 'text', and 'createdOn'.
+class BlogPost {
+    constructor(authorName, title, text, createdOn) {
+    this.authorName = authorName;
+    this.title = title;
+    this.text = text;
+    this.createdOn = createdOn;
+    this.comments = [];
+}
+// Need to finish file! See pics on phone!
+}
 
 // TODO: Give BlogPost a property called 'comments' that is set to an empty array.
+
+
+
 
 // TODO: Give BlogPost a method called printMetaData() that logs a message saying 'Created by (authorName) on (createdOn)'.
 

@@ -1,3 +1,10 @@
 // TODO: Define a Validate class with an isPassword() function that takes in a password parameter.
 
+class Validate {
+    isPassword = function (password) {
+        
+    }
+}
 // TODO: Export the Validate class from this file.
+
+module.export =  Validate;

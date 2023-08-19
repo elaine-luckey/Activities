@@ -1,25 +1,34 @@
 // TODO: Create a class constructor named ForumItem that takes in 'authorName', 'text', and 'createdOn'.
 
-// TODO: Setup BlogPost and Comment so they inherit their structure from ForumItem.
-class BlogPost {
-  constructor(authorName, title, text, createdOn) {
-    this.authorName = authorName;
-    this.title = title;
-    this.text = text;
-    this.createdOn = createdOn;
-    this.comments = [];
+class ForumItem {
+  constructor(authorName, text, createdOn){
+    this.authorName = authorName,
+    this.text = text,
+    this.createdOn = createdOn
   }
+}
+
+// TODO: Setup BlogPost and Comment so they inherit their structure from ForumItem.
+function BlogPost () {
+
+  ForumItem.call(this, authorName, text, createdOn)
+  this.comment = [];
+  this.title = title;
 
   addComment(comment) {
     this.comments.push(comment);
   }
+
+  
 }
 
-class Comment {
+class Comment extends ForumItem {
   constructor(authorName, text, createdOn, reaction) {
-    this.authorName = authorName;
-    this.text = text;
-    this.createdOn = createdOn;
+    // this.authorName = authorName;
+    // this.text = text;
+    // this.createdOn = createdOn;
+    // this.reaction = reaction;
+    super(this, authorName, text, createdOn);
     this.reaction = reaction;
   }
 }

@@ -2,7 +2,7 @@
 
 Work with a partner to resolve the following issue(s):
 
-* As a developer, I want to be able to delete a specific row from the `favorite_books` table.
+- As a developer, I want to be able to delete a specific row from the `favorite_books` table.
 
 ## Expected Behavior
 
@@ -36,9 +36,10 @@ What does the `?` represent in a prepared statement?
 
 If you have completed this activity, work through the following challenge with your partner to further your knowledge:
 
-* How can you set user-defined values using a MySQL statement?
+- How can you set user-defined values using a MySQL statement?
 
 Use [Google](https://www.google.com) or another search engine to research this.
 
 ---
+
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.

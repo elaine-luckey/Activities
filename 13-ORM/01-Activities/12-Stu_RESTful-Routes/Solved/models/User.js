@@ -3,8 +3,6 @@ const sequelize = require('../config/connection');
 
 class User extends Model {}
 
-// TODO: Add validations to the User model
-
 User.init(
   {
     id: {
@@ -15,29 +13,12 @@ User.init(
     },
     username: {
       type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        isUsername: true,
-        is: /^[a-zA-Z0-9]+$/,
-      },
     },
     email: {
       type: DataTypes.STRING,
-      unique: true,
-      allowNull: false,
-      validate: {
-        isEmail: true,
-      },
     },
     password: {
       type: DataTypes.STRING,
-      unique: true,
-      allowNull: false,
-      validate: {
-        isPassword: true,
-        min: 8,
-        max: 15,
-      },
     },
   },
   {

@@ -4,7 +4,7 @@ Work with a partner to add comments describing the functionality of the code fou
 
 ## 📝 Notes
 
-Refer to the documentation: 
+Refer to the documentation:
 
 [npm documentation on bcrypt](https://www.npmjs.com/package/bcrypt)
 
@@ -14,9 +14,10 @@ Refer to the documentation:
 
 If you have completed this activity, work through the following challenge with your partner to further your knowledge:
 
-* How can we persist a login state?
+- How can we persist a login state?
 
 Use [Google](https://www.google.com) or another search engine to research this.
 
 ---
+
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.

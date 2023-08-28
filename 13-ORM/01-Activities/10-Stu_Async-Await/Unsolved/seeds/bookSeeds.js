@@ -11,15 +11,24 @@ const seedDatabase = () => {
   return sequelize.sync({ 
     force: true 
   })
-  .then(() => {
-    Book.bulkCreate(bookSeedData)
-    .then(() => {
-      Library.bulkCreate(librarySeedData)
-      .then(() => {
-        console.log('All Seeds Planted'); 
-      });
-    });
-  });
+  const bookBulking = () => {
+    Book.bulkCreate(bookSeedData);
+  };
+
+  const libraryBulking = () =>{
+    Library.bulkCreate(librarySeedData);
+  }
+
+  const printConsole = () => {
+    console.log('All Seeds Planted'); 
+  }
+
+  const seedDatabaseAsync = async () => {
+    await bookBulking();
+    await libraryBulking();
+    await printConsole();
+
+  }
 
   process.exit(0);
 };

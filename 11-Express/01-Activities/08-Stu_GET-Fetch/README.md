@@ -2,7 +2,7 @@
 
 Work with a partner to resolve the following issues:
 
-* As a user, I want to be able to view pet data on the page by pressing a **Fetch pets** button.
+- As a user, I want to be able to view pet data on the page by pressing a **Fetch pets** button.
 
 ## Expected Behavior
 
@@ -30,9 +30,10 @@ How can we test the endpoints outside of the browser?
 
 If you have completed this activity, work through the following challenge with your partner to further your knowledge:
 
-* What are static assets?
+- What are static assets?
 
 Use [Google](https://www.google.com) or another search engine to research this.
 
 ---
+
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.

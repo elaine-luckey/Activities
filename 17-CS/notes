@@ -1,0 +1,22 @@
+1. What is an Algorithm? --> set of instructions for solving a problem or accomplishing a task
+
+2. What is a data structure? --> data organization, management and storage
+
+3. What is a Web API? --> allows machines to communicate. What your browser provides for you, like the dev tools.
+
+4. What is the difference between scope and context? --> Scope is determined by where a variable is declared. Scope is the outer function, but does not have access to the inner arrays. If can access the things, then it is in your scope, if you cannot, you are out of scope. Context is the state of the current execution of code.
+
+5. What is computational thinking? --> refers to the formulation of a solution using logic, patterns, and problem-solving methods.
+
+6. GEC = Global Execution Context --> Has two parts, Variables (or Memory) and Run/Execution (thread of execution)
+
+   - The variable section stores the actual variables and their values. Also holds functions
+   - The Run section runs the logic of the code and runs it in the order. It also assigns the value to the variable in the memory (back to in the variable section)
+
+7. Your Control always sits on the top of all the elements of the code
+
+8. What does "this" mean? --> it represents the whole global context. "this" is a keyword in the Global Execution Context and is the window object... Never use the arrow function when you are dealing with "this"
+
+9. 'use strict' --> will create the "this" variable to be undefined if you have 'use strict' in the file. It also gets rid of side effects of other functions in the code.
+
+10. What is a Call stack? --> where all the execution context goes, it stacks on top of each other.

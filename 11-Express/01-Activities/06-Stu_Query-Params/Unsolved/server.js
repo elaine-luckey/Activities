@@ -11,8 +11,9 @@ const sortHelper = (type) =>
   termData.sort(sortData('term', 'relevance', `${type}`));
 
 // TODO: Add a comment describing the functionality of this route
-//get request for the /api/terms routes
+//get request for the /api/terms route
 app.get('/api/terms/', (req, res) => {
+  
   // TODO: Add a comment describing the req.query object
 //req.query is to query the length of the keys in terms that is anything greater than 0
 //is there any ? in the url with any query params

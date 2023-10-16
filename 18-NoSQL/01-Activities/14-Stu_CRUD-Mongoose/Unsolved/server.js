@@ -60,6 +60,10 @@ app.put('/find-one-update/:genre', async (req, res) => {
   // TODO: Write a route that will find the first instance of a document that contains a name with the value equal to 'Kids'
   // Update that name with the value given from the URL param
   // Return the updated document
+  try {
+    const result = await Genre.find({name: 'Kids'})
+  }
+
 });
 
 db.once('open', () => {

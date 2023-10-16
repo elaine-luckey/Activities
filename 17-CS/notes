@@ -20,3 +20,5 @@
 9. 'use strict' --> will create the "this" variable to be undefined if you have 'use strict' in the file. It also gets rid of side effects of other functions in the code.
 
 10. What is a Call stack? --> where all the execution context goes, it stacks on top of each other.
+
+11. What is a linear search? --> It is a straight forward search from left to right

@@ -1,6 +1,8 @@
 // TODO: Add a comment describing what the `position` parameter means for this function.
+//The 'position' parameter represents the position (index)
 const fibonacci = (position) => {
   // TODO: Add a comment describing the purpose of this conditional statement.
+  
   if (position < 2) {
     return position;
   }

@@ -9,7 +9,7 @@ test('Student is returning as an object', () => {
   expect(typeof newStudent).toEqual('object');
 });
 
-test('Checkng log for correct values, Dominique, 11th', () => {
+test('Checking log for correct values, Dominique, 11th', () => {
   const consoleSpy = jest.spyOn(console, 'log');
   const newStudent = Student('Dominique', '11th');
   newStudent.greet();
@@ -18,7 +18,7 @@ test('Checkng log for correct values, Dominique, 11th', () => {
   );
 });
 
-test('Checkng log for correct values, Raphael, 4th', () => {
+test('Checking log for correct values, Raphael, 4th', () => {
   const consoleSpy = jest.spyOn(console, 'log');
   const newStudent = Student('Raphael', '4th');
   newStudent.greet();

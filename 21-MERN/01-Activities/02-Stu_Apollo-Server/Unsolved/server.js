@@ -4,6 +4,7 @@ const { ApolloServer } = require('@apollo/server');
 const { expressMiddleware } = require('@apollo/server/express4');
 
 // TODO: Add a comment describing the functionality of this expression
+//importing an object from the schemas module
 const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
 
@@ -16,6 +17,7 @@ const server = new ApolloServer({
 const app = express();
 
 // TODO: Add a comment describing the functionality of this async function
+//starts the apollo server (starts middleware) then injects the middleware into the express instance
 const startApolloServer = async () => {
   await server.start();
   
